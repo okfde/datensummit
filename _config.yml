@@ -32,4 +32,3 @@ collections:
   stories_en:
     output: true
     permalink: /en/stadtgeschichten/:path/
-  digitalrefugeelabs:
