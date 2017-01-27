@@ -1,0 +1,93 @@
+---
+layout: base
+title: "Anmelden"
+footerlogos: yes
+url: /anmelden
+
+---
+
+
+<!-- About -->
+<div class="beneath-sections jumbotron fond__white">
+  <div class="container text__black">
+   <form action="/register" method="post">
+  <fieldset>
+    <div style=" display: flex;flex-direction: row;">
+      <ul>
+        <li>
+          <label for="surname">Nachname</label><br/>
+          <input type="text" id="surname" name="surname" placeholder="Nachname" required/>
+        </li>
+        <li>
+          <label for="forename">Vorname</label><br/>
+          <input type="text" id="forename" name="forename" placeholder="Vorname" required/>
+        </li>
+        <li>
+          <label for="email">E-Mail</label><br/>
+          <input type="email" id="email" name="email" placeholder="E-Mail" required/>
+        </li>
+        <li>
+          <label for="attendance">Ich nehme teil an</label>
+          <div id="attendance">
+            <label> <input type="radio" name="attendance" value="beide" required> Beiden Tage*</label><br/>
+            <label> <input type="radio" name="attendance" value="1" required> Nur Tag 1: Ministerium*</label><br/>
+            <label> <input type="radio" name="attendance" value="2" required> Nur Tag 2: TBA-Veranstaltungsort</label>
+          </div>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="childcare" value="ja"> Kinderbetreuung erwünscht<br>
+          </label>
+        </li>
+        <li>
+          <label for="expertise">Welchen Bereich repräsentiere ich?</label><br/>
+          <select id="expertise" name="expertise">
+            <option value="Keine Angabe">Keine Angabe</option>
+            <option value="Nichtregierungsorganisation">Nichtregierungsorganisation</option>
+            <option value="Politik und Verwaltung">Politik und Verwaltung</option>
+            <option value="Wirtschaft">Wirtschaft</option>
+            <option value="Medien">Medien</option>
+            <option value="Wissenschaft">Wissenschaft</option>
+            <option value="Techie">Techie</option>
+            <option value="Sonstiges">Sonstiges</option>
+          </select>
+        </li>
+        <li>
+          <label for="contribute">Was möchte ich beitragen</label><br/>
+          <textarea id="contribute" name="contribute" cols="50" rows="10"></textarea>
+        </li>
+        <li>
+          <label for="message">Sonstiges</label><br/>
+          <textarea id="message" name="message" cols="50" rows="10"></textarea>
+        </li>
+      </ul>
+      <div>
+        <b>Folgende Fehler sind nur erforderlich, wenn auch an Tag 1 teilgenommen wird:</b><br/>
+        <ul>
+          <li>
+            <label for="street">Straße</label><br/>
+            <input type="text" id="street" name="street" placeholder="Straße"/>
+          </li>
+          <li>
+            <label for="house">Hausnummer</label><br/>
+            <input type="text" id="house" name="house" placeholder="Hausnummer"/>
+          </li>
+          <li>
+            <label for="plz">Postleitzahl:</label><br/>
+            <input type="text" id="plz" name="plz" placeholder="Postleitzahl"/>
+          </li>
+          <li>
+            <label for="city">Ort:</label><br/>
+            <input type="text" id="city" name="city" placeholder="Ort"/>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <input type="submit" value="Anmelden"/>
+    <hr>
+    * für den Zugang in das BMVI benötigt das Ministerium ein gültiges Lichtbilddokument von jedem Teilnehmer am Veranstaltungstag.
+  </fieldset>
+</form>
+  </div>
+</div>

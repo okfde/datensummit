@@ -1,0 +1,40 @@
+ <div class="main-nav-wrapper">
+   <ul class="nav nav-pills">
+        <li class="text-center nav-meta-lang">
+          {% if page.lang == 'en' %}
+          <a href="{{page.url | replace:'/en','' | replace:'index.html',''}}">DE</a>
+          {% else %}
+          {% assign topdir = page.url | replace_first:'/',''| split:"/" | first %}
+          {% assign urllength = page.url | size %}
+          {% case topdir %}
+          {% when 'blog' or 'presse' or 'impressum' or 'ressourcen' %}
+          <a href="/en/">EN</a>
+          {% when 'projekte' %}
+          {% if urllength > 25 %}
+          <a href="/en/">EN</a>
+          {% else %}
+          <a href="/en{{page.url | replace:'index.html',''}}">EN</a>
+          {% endif %}
+          {% else %}
+          <a href="/en{{page.url | replace:'index.html',''}}">EN</a>
+          {% endcase %}
+          {% endif %}
+        </li>
+
+        {% if page.lang == 'en' %}
+        {% assign navigation = site.data.navigation.en %}
+        {% else %}
+        {% assign navigation = site.data.navigation.de %}
+        {% endif%}
+
+        {% for link in navigation %}
+        {% assign current = nil %}
+        {% if page.url contains link.url %}
+        {% assign current = 'current' %}
+        {% endif %}
+        <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>

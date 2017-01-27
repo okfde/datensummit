@@ -1,0 +1,59 @@
+<div class="project-wrapper project-teaser project-teaser-slim fond__white clearfix">
+  <div class="row">
+    <div class="col-sm-6 col-sm-push-6">
+      {% if sitepage.imgname-teaser %}
+        {% assign imgname = sitepage.imgname-teaser %}
+      {% elsif sitepage.imgname %}
+        {% assign imgname = sitepage.imgname %}
+      {% endif %}
+
+      {% if sitepage.imgname OR sitepage.imgname-teaser %}
+      <a href="{{ sitepage.url }}">
+        <div class="image-crop">
+          <img src="/assets/projects/{{ imgname }}" alt="Project Image" class="project-image img-responsive">
+        </div>
+      </a>
+      {% endif %}
+    </div>
+
+    <div class="col-sm-6 col-sm-pull-6">
+      <h4 class="project-title"><a href="{{ sitepage.url }}"> {{ sitepage.title }}</a></h4>
+      <div class="project-description">
+          {% if sitepage.excerpt %}
+            {{ sitepage.excerpt | remove: '<p>' | remove: '</p>' | markdownify }}
+          {% else %}
+            {{ sitepage.content | remove: '<p>' | remove: '</p>' | truncatewords: 25  | markdownify }}
+          {% endif %}
+      </div>
+
+      <div class="project-footer clearfix">
+        <div class="project-labs-box">
+          {% for project_lab in sitepage.lab %}
+            {% assign outer_forloop = forloop %}
+            {% for lab in site.labs %}
+              {% if lab.lab == project_lab %}
+                {% assign laburl = lab.key %}
+                {% if page.lang == 'en' %}
+                  {% capture laburl %}en/{{ laburl }}{% endcapture %}
+                {% endif %}
+                  <div class="event-location icon-before project-lab {% unless outer_forloop.last %}m-r-2{% endunless %}" style="display: inline-block;">
+                    <a href="/{{ laburl }}">{{ project_lab }}</a>
+                  </div>
+                {% break %}
+              {% endif %}
+            {% endfor%}
+          {% endfor%}
+        </div>
+        <div class="project-status-box">
+          {% if sitepage.status %}
+            {% assign status = sitepage.status %}
+          {% else %}
+            {% assign status = 'In Progress' %}
+          {% endif %}
+
+          <span class="project-status">{{ status }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

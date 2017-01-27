@@ -1,0 +1,114 @@
+
+.mobile-menu-toggle {
+	display: none;
+}
+
+.nav-meta {
+	text-align: right;
+}
+
+
+.nav-wrap {
+  top: 40px;
+  right: 60px;
+  z-index: 1001;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.page-wrap {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.mobile-menu-open .page-wrap {
+  -webkit-transform: translateX(calc(-100% + #{$keep}));
+          transform: translateX(calc(-100% + #{$keep}));
+}
+
+
+.main-nav-wrapper {
+
+	.nav-pills>li {
+		a {
+		}
+	}
+
+		.nav-pills .current {
+		display: block;
+	}
+
+}
+
+
+.nav-pills>li {
+	float: right;
+}
+#animation-wrapper {
+	background: transparent;
+}
+
+.packery-item {
+	width: 47.5%;
+}
+
+.members .member {
+	min-width: 33%;
+}
+
+/*===============================
+=            Stories            =
+===============================*/
+
+.story--header--title {
+	font-size: 36px;
+}
+
+.story-teaser--title {
+	background: transparent !important;
+}
+
+.story {
+	.members .member {
+		min-width: 50%;
+	}
+}
+
+/*-----  End of Stories  ------*/
+
+.hero-overlay {
+
+	padding: 0;
+	position: absolute;
+	text-align: left; 
+	width: 100%;
+	height: 100%;
+
+	h1 {
+		font-family: 'Overpass', monospace;
+		font-weight: 300;
+		width: 80%;
+		margin: 1em 0em 0em 1em;
+		font-size: 40px;
+		letter-spacing: 8px;
+		line-height: 50px;
+		}
+
+	h3 {
+		width: 55%;
+		margin: 0em 0em 0em 0em;
+		font-size: 28px;
+		position: absolute;
+		bottom: 1em;
+		right: 1em;
+		text-transform: none;
+		letter-spacing: 1px;
+		line-height: 32px;
+		}
+	}
+
+

@@ -1,0 +1,26 @@
+de:
+  - title: Blog
+    url: /blog
+#  - title: Presse
+#    url: /presse
+#  - title: Speaker
+#    url: /ueber
+
+  - title: Themen
+    url: /stadtgeschichten
+
+
+  - title: Info
+    url: /mitmachen
+
+
+en:
+  - title: Blog (de)
+    url: /blog
+#  - title: Press (de)
+#    url: /presse
+#  - title: Speaker
+#   url: /en/ueber
+  - title: Info
+    url: /en/mitmachen
+  

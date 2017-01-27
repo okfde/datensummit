@@ -1,0 +1,96 @@
+---
+layout: default
+footerlogos: yes
+kommt: yes
+---
+
+
+
+<!-- DRL Teaser -->
+<div class="hero-container fond__green2">
+    <a href="/mitmachen">
+    <div class="hero-pattern hero-pattern__drl">
+      <div class="hero-pattern-wrap">
+       {% include home-hero-hartefakten.html %} 
+
+      </div>
+    </div>
+
+
+    </a>
+</div>
+
+
+
+<!-- About -->
+<div class="jumbotron fond__white animated">
+  <div class="container text-center text__black">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <p>Beim Datensummit ‘17 rücken wir den gesellschaftlichen Nutzen von Offenen Daten in den Vordergrund. Er ist ein Forum für alle, die Open Data in Deutschland voranbringen, weiterdenken oder erstmal kennenlernen möchten.
+        </p>
+        <p>
+
+        Wir präsentieren die Vielfalt von Open-Data-Projekten und Entwicklungen in Deutschland und zeigen anhand von internationalen Beispielen, wohin uns der Weg führen kann. Wofür brauchen wir Open Data, was haben wir bisher gut gemacht und wie können wir Energien bündeln, um noch mehr zu bewegen?         
+        </p>
+        <p>
+        Mit Keynotes und Kurzvorträgen zu nationalen und internationalen Erfolgsgeschichten, aktuellen Entwicklungen und historischen Failstories wollen wir inspirieren. Gesprächsrunden, Barcamps, Workshops und offene Formate geben Raum zum Wissensaustausch, dem gegenseitigen Kennenlernen und der Netzwerkbildung zwischen Datenbegeisterten, politisch Aktiven, Entrepreneuren und VertreterInnen aus Politik und Verwaltung.
+        </p>
+      </div>
+    </div>
+  <div class="jumbotron fond__white animated"> 
+    <div class="row">
+      <div class="col-lg-4 highlight">
+        <p class="highlight-red" >Von nationalen und internationalen RednerInnen lernen und inspirieren lassen</p>
+      </div>
+      <div class="col-lg-4 highlight">
+        <p class="highlight-cyan" >MitstreiterInnen für eigene Projekte finden und gesellschaftliche Veränderungen in Gang setzen</p>
+      </div>
+      <div class="col-lg-4 highlight">
+        <p class="highlight-orange" >Erfahren wie Daten Freude und Freunde machen</p>
+      </div>
+    </div>
+   </div>  
+  </div>
+  </div>
+</div>
+
+
+
+<script src="js/lib/jquery.cookie.js"></script>
+
+{% include leaflet.html %}
+
+<script type="text/javascript">
+
+  {% if page.lang == 'en' %}
+    {% assign homehero = site.data.homehero.en %}
+  {% else %} 
+    {% assign homehero = site.data.homehero.de %}
+  {% endif %}
+
+  herodata = {
+    headline : '{{ homehero.headline }}',
+    claims: [{% for claim in homehero.claims %}'{{ claim }}',{% endfor %}]
+  }
+
+</script>
+
+<!-- Newsletter -->
+{% include newsletter-form.html %}
+
+<script src="js/lib/jquery.cookie.js"></script>
+
+{% include leaflet.html %}
+
+<script type="text/javascript">
+  {% if page.lang == 'en' %}
+    {% assign homehero = site.data.homehero.en %}
+  {% else %} 
+    {% assign homehero = site.data.homehero.de %}
+  {% endif %}
+  herodata = {
+    headline : '{{ homehero.headline }}',
+    claims: [{% for claim in homehero.claims %}'{{ claim }}',{% endfor %}]
+  }
+</script>
