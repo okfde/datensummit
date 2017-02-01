@@ -136,23 +136,72 @@
   height: 100%;
 
   h1 {
-    font-family: 'Overpass', monospace;
-    font-weight: 300;
     width: 80%;
-    margin: 1.5em 0em 1em 1em;
-    font-size: 20px;
-    letter-spacing: 3px;
-    line-height: 24px;
+    margin: -5.5em 0em 1em 1em;
+    font-size: 22px;
+    line-height: 26px;
     }
 
   h3 {
+    font-family: $leaguespartan;
     width: 60%;
     margin: 1em 0em 0em 1.5em;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 18px;
-    text-transform: none;
+    text-transform: uppercase;
     letter-spacing: 2px;
 
     }
   }
 
+.sign-in-form {
+  display: flex;
+  flex-direction: row;
+
+
+  ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    margin: 50px 0;
+  }
+
+  label {
+      display: inline-block;
+      /* margin-bottom: 5px; */
+      font-weight: bold;
+    }
+
+  input {
+    
+    min-width: 500px;
+
+
+    input[type="radio"], input[type="checkbox"] {
+        margin: 4px 10px 0 0;
+        margin-top: 1px \9;
+        line-height: normal
+    }
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      padding: 0 10px;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+      padding: 0 10px;
+  }
+
+  :-ms-input-placeholder { /* IE 10+ */
+      padding: 0 10px;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+      padding: 0 10px;
+  }
+ 
+}

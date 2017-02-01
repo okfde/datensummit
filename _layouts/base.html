@@ -70,10 +70,6 @@
     @import url('https://fonts.googleapis.com/css?family=Overpass');
   </style>
 
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Overpass+Mono:300,400');
-  </style>
-
   </head>
 
   <body>
@@ -97,7 +93,13 @@
 
         {{ content }}
 
-        <footer>
+        {% if page.kommt %}
+          <div class="hero-container kommt">
+            {% include kommt.html %}
+          </div>
+        {% endif %}   
+
+           <footer>
           <div class="jumbotron fond__grey meta-links-foot">
             <div class="container">
               <div class="row text-center text-uppercase">
@@ -112,34 +114,72 @@
             </div>
           </div>
 
-          {% if page.footerlogos %}
+         <!--    {% if page.footerlogos %}
           <div class="jumbotron fond__grey-mid partner">
             <div class="container">
-              <div class="row text-center">
-                <div class="col-xs-12">
-                  <ul class="clearfix">
-                    <li>
-                      <a href="http://www.okfn.de/"><img class="okfn-logo img-responsive" src="/img/OKFN.png" alt="OKFN Logo" /></a>
-                    </li>
-                    <li>
-                    Schirmherrschaft: Alexander Dobrindt, Bundesminister für Verkehr und digitale Infrastruktur, MdB
-                    Gefördert durch
-                      <a href="http://www.bmbf.de/"><img class="bmbf-logo img-responsive" src="/img/bmbf.svg"  alt="Bundesministerium für Bildung und Forschung" /></a>
-                    </li>
-                </ul>
+              <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 drl-footer partner">
+                  <a href="https://www.okfn.de/"><img class="drl-partner-logo img-responsive" src="/img/OKFN.png" alt="OKFN Logo" /></a> Schirmherrschaft: Alexander Dobrindt, Bundesminister für Verkehr und digitale Infrastruktur, MdB
+                  Gefördert durch
+                  <a href="https://www.bmvi.de/"><img class="drl-partner-logo img-responsive" src="/img/bmvi.svg"  alt="Bundesministerium für Verkehr und digitale Infrastruktur" /></a>
               </div>
             </div>
           </div>
           {% endif %}
-        </div>
+        </div>-->
       
-
-          {% if page.kommt %}
-
-        <div class="hero-container kommt">
-          {% include kommt.html %}
+      {% if page.footerlogos %}
+        <div class="jumbotron fond__grey-mid partner">
+          <div class="container">
+            <div class="col-lg-10 col-lg-offset-1">
+              <div class="col-sm-6 speaker-margin">
+                 <a href="https://www.okfn.de/"><img class="drl-partner-logo img-responsive" src="/img/OKFN.png" alt="OKFN Logo"  style="max-width:250px;" /></a> 
+              </div>
+    
+              <div class="col-sm-6 speaker-margin">
+                 <a href="https://www.bmvi.de/"><img class="drl-partner-logo img-responsive" src="/img/bmvi.svg"  alt="Bundesministerium für Verkehr und digitale Infrastruktur" style="max-width:250px;" /></a>
+              </div>
+            </div>
+              <p class="text-center">Schirmherrschaft: Alexander Dobrindt, Bundesminister für Verkehr und digitale Infrastruktur MdB</p>
+            </div>
+          </div>
         </div>
-        {% endif %}   
+
+
+            
+        {% endif %}
+
+
+
+      {% if page.metalinks %}
+        <div class="jumbotron fond__grey-bright meta-links-foot">
+            <div class="container">
+              <div class="row text-center text-uppercase">
+                <div class="col-lg-6">
+                  {% if page.lang == 'en' %}
+                    <a href="/impressum">About Us &amp;  (de)</a> 
+                  {% else %}
+                    <a href="/impressum">Über uns &amp; </a> 
+                  {% endif%}
+                </div>
+                <div class="col-lg-6">
+                  {% if page.lang == 'en' %}
+                    <a href="/impressum">About Us &amp;  (de)</a> 
+                  {% else %}
+                    <a href="/impressum">Über uns &amp; </a> 
+                  {% endif%}
+                </div>
+              </div>
+            </div>
+      </div>
+
+
+            
+        {% endif %}
+
+
+
+     
       </div>
     </footer>
   </div>

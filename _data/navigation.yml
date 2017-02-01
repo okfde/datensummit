@@ -1,26 +1,35 @@
 de:
-  - title: Blog
-    url: /blog
+# - title: Blog
+#   url: /blog
 #  - title: Presse
 #    url: /presse
-#  - title: Speaker
-#    url: /ueber
+  - title: Speaker
+    url: /speaker
 
-  - title: Themen
-    url: /stadtgeschichten
+  - title: Anmelden
+    url: /anmelden
+
+#  - title: Themen
+#    url: /themen
 
 
   - title: Info
-    url: /mitmachen
+    url: /info
+
 
 
 en:
-  - title: Blog (de)
-    url: /blog
+#  - title: Blog (de)
+#    url: /blog
 #  - title: Press (de)
 #    url: /presse
-#  - title: Speaker
-#   url: /en/ueber
+# - title: Speaker
+#   url: /en/speaker
+
+  - title: Register
+    url: /en/anmelden
+  
+
   - title: Info
-    url: /en/mitmachen
+    url: /en/info
   

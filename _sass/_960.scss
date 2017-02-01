@@ -7,24 +7,22 @@
 	height: 100%;
 
 	h1 {
-		font-family: 'Overpass', monospace;
-		font-weight: 300;
 		width: 80%;
 		margin: 1em 0em 0em 1em;
 		font-size: 40px;
-		letter-spacing: 8px;
 		line-height: 50px;
 		}
 
 	h3 {
-		width: 60%;
-		margin: 0em 0em 0em 0em;
+		font-family: $leaguespartan;
+		width: 55%;
+		margin: 0;
 		font-size: 20px;
 		position: absolute;
 		bottom: 1em;
-		right: 1em;
-		text-transform: none;
+		right: -15em;
+		text-transform: uppercase;
 		letter-spacing: 1px;
-		line-height: 24px;
+		line-height: 26px;
 		}
 	}
