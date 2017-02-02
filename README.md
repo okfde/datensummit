@@ -1,7 +1,6 @@
 
 # Datensummit.de
 
-These are the source files for the [Code for Germany Website]
 
 ## Setup
 
@@ -15,6 +14,7 @@ presuming you know how to get there:
 
 ```bash
 git clone https://github.com/okfde/datensummit.git
+```
 Install Ruby and gem. Then get the dependencies:
 
 ```bash
