@@ -1861,19 +1861,65 @@ keyframes fadein {
 
 
 .sign-in-form {
- 	display: flex;
- 	flex-direction: row;
 
-
-	ul{
-		list-style: none;
-		margin: 0 auto;
-		padding: 0;
+	form {
+		width: 100%;
 	}
 
-	li {
-		list-style: none;
-		margin: 50px 0;
+	fieldset {
+		width: 100%;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		background-color: $grey-bright;
+		border: 1px solid $grey-bright;
+		box-shadow: none;
+		outline: none;
+		transition: border .2s;
+		&:focus {
+			border: 1px solid $black;
+		}
+	}
+
+	input[type="checkbox"] {
+		display: inline-block;
+		width: initial;
+		box-shadow: none;
+	}
+
+	.sign-in-form-wrapper {
+
+	}
+
+	.sign-in-form-section {
+		padding: 40px 0;
+	}
+
+	.sign-in-form-section .container {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.sign-in-form-section[data-toggle-target] {
+		display: none;
+		&.is-visible {
+			display: block;
+		}
+	}
+
+	.sign-in-form-section p {
+		display: block;
+		width: 100%;
+	}
+
+	.sign-in-form-column {
+		flex: 1;
+		padding: 0 20px;
+	}
+
+	.sign-in-form-input:not(:first-child) {
+		margin-top: 40px;
 	}
 
 	label {
@@ -1883,15 +1929,25 @@ keyframes fadein {
     }
 
 	input {
-		
-		max-width: 300px;
-
 
 		input[type="radio"], input[type="checkbox"] {
     		margin: 4px 10px 0 0;
     		margin-top: 1px \9;
     		line-height: normal
 		}
+	}
+
+	#attendance {
+		display: flex;
+		flex-flow: row nowrap;
+		> * {
+			flex: 1;
+			margin-top: 0;
+		}
+	}
+
+	#attendance label {
+		width: 100%;
 	}
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */

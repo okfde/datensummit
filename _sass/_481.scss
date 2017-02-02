@@ -1,4 +1,3 @@
-
 .mobile-menu-toggle {
   display: none;
 }
@@ -117,7 +116,7 @@
   float: left;
   width: 60%;
   .m-r-2 { margin-right: 18px; }
-  .icon-before:before { margin-right: 18; }
+  .icon-before:before { margin-right: 18px; }
 }
 
 .project-status-box {
@@ -177,9 +176,6 @@
     }
 
   input {
-    
-    min-width: 500px;
-
 
     input[type="radio"], input[type="checkbox"] {
         margin: 4px 10px 0 0;
