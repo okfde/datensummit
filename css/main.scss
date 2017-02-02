@@ -10,23 +10,23 @@
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@import "base";
+@import "../_sass/base";
 //@import "mobilemenubutton";
 
 @media screen and (min-width: 481px) {
-	@import "481";
+	@import "../_sass/481";
 }
 
 @media screen and (min-width: 768px) {
-	@import "768";
+	@import "../_sass/768";
 }
 
 
 @media screen and (min-width: 960px) {
-	@import "960";
+	@import "../_sass/960";
 }
 
 @media screen and (min-width: 1200px) {
-	@import "1200";
+	@import "../_sass/1200";
 }
 
