@@ -103,11 +103,16 @@
           <div class="jumbotron fond__grey meta-links-foot">
             <div class="container">
               <div class="row text-center text-uppercase">
-                <div class="col-lg-12">
+                <div class="col-lg-10">
                   {% if page.lang == 'en' %}
                     <a href="/impressum">Contact &amp; Imprint (de)</a> 
                   {% else %}
                     <a href="/impressum">Kontakt &amp; Impressum</a> 
+                  {% endif%}
+                  {% if page.lang == 'en' %}
+                    <a href="/info">About Us</a> 
+                  {% else %}
+                    <a href="/info">Über uns</a> 
                   {% endif%}
                 </div>
               </div>
@@ -143,43 +148,8 @@
               <p class="text-center">Schirmherrschaft: Alexander Dobrindt, Bundesminister für Verkehr und digitale Infrastruktur MdB</p>
             </div>
           </div>
-        </div>
-
-
-            
-        {% endif %}
-
-
-
-      {% if page.metalinks %}
-        <div class="jumbotron fond__grey-bright meta-links-foot">
-            <div class="container">
-              <div class="row text-center text-uppercase">
-                <div class="col-lg-6">
-                  {% if page.lang == 'en' %}
-                    <a href="/impressum">About Us &amp;  (de)</a> 
-                  {% else %}
-                    <a href="/impressum">Über uns &amp; </a> 
-                  {% endif%}
-                </div>
-                <div class="col-lg-6">
-                  {% if page.lang == 'en' %}
-                    <a href="/impressum">About Us &amp;  (de)</a> 
-                  {% else %}
-                    <a href="/impressum">Über uns &amp; </a> 
-                  {% endif%}
-                </div>
-              </div>
-            </div>
-      </div>
-
-
-            
-        {% endif %}
-
-
-
-     
+        </div>            
+        {% endif %}  
       </div>
     </footer>
   </div>

@@ -1221,7 +1221,7 @@ $date-circle: 80px;
 .hero-slogan {
 	background-image: url("/img/workinon.gif");
 //	background-size: 50%;
-  	background-size: 60%;
+  	background-size: 50%;
     background-position-x: 0px;
     background-position-y: 0px;
 
@@ -1939,12 +1939,12 @@ keyframes fadein {
 .slogan{
 
 	h2 {
-	margin: 20px 20px;
-	text-transform: none;
-
-
+		margin: -20px 20px 30px 20px;
+		text-transform:none;
+		max-width: 400px;
+		font-size: 20px;
+		line-height: 30px;
 	}
-
 }
 
 

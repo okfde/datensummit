@@ -22,11 +22,9 @@ url: /anmelden
 <div class="beneath-sections jumbotron fond__white">
   <div class="container text__black">
   <h3 class="text-center">Wissenswertes vor der Anmeldung</h3>
-    <p class="text-center">Wir haben genau<span class="highlight-red">200 freie Plätze.</span> Deshalb  
-      bitten wir dich, uns eine <a href="mailto:datensummit@okfn.de">E-Mail</a> zu schreiben, solltest du doch keine Zeit haben.  <br> 
-     Es besteht begrenzt die Möglichkeit Reisekosten bis zu 100€ pro Person können zu erstatten. Schreibe uns in diesem Fall oder bei weiteren Fragen einfach eine <a href="mailto:datensummit@okfn.de">E-Mail</a> . 
-        </p>
-
+    <p class="text-center">
+      Wir haben genau <span class="highlight-red">200 freie Plätze. </span> <br>Es besteht begrenzt die Möglichkeit, Reisekosten bis zu 100€ pro Person zu erstatten. Schreibe uns in diesem Fall oder bei weiteren Fragen einfach eine <a href="mailto:datensummit@okfn.de">E-Mail</a>.
+    </p>
     <div class="sign-in-form">
       <form action="/register" method="post">
         <fieldset>
@@ -45,11 +43,30 @@ url: /anmelden
                 <input type="email" id="email" name="email" placeholder="E-Mail" required  class="form-control"/>
               </li>
               <li>
+                <label for="organisation">Organisation</label><br/>
+                <input type="text" id="organisation" name="organisation" placeholder="Organisation" class="form-control"/>
+              </li>
+
+              <li>
                 <label for="attendance">Ich nehme teil an</label>s
                 <div id="attendance">
                   <label> <input type="radio" name="attendance" value="beide" required> Beiden Tagen*</label><br/>
                   <label> <input type="radio" name="attendance" value="1" required> Nur Tag 1: Ministerium*</label><br/>
                   <label> <input type="radio" name="attendance" value="2" required> Nur Tag 2: TBA-Veranstaltungsort</label>
+             
+
+                <p class="text-center">Daten für den Zugang im BMVI </p><br/>
+
+
+              <li>
+                <label for="birthdate">Geburtsdatum</label><br/>
+                <input type="text" id="birthdate" name="birthdate" placeholder="XX.XX.XXX" required class="form-control"/>
+              </li>
+              <li>
+                <label for="adress">Adresse</label><br/>
+                <input type="text" id="adress" name="adress" placeholder="Straße 24"  class="form-control"/>
+              </li>
+
               <li>
                 <label for="expertise" class="form-control">Welchen Bereich repräsentiere ich? </label><br/>
                 <select id="expertise" name="expertise">
@@ -70,27 +87,8 @@ url: /anmelden
             </ul>
           </div>
         <br><br>
-          <p class="text-center">Folgende Fehler sind nur erforderlich, wenn auch an Tag 1 teilgenommen wird:</p><br/>
-          <div style=" display: flex;flex-direction: row;">
-            <ul>
-              <li>
-                <label for="street">Straße</label><br/>
-                <input type="text" id="street" name="street" placeholder="Straße" class="form-control"/>
-              </li>
-              <li>
-                <label for="house">Hausnummer</label><br/>
-                <input type="text" id="house" name="house" placeholder="Hausnummer"  class="form-control"/>
-              </li>
-              <li>
-                <label for="plz">Postleitzahl:</label><br/>
-                <input type="text" id="plz" name="plz" placeholder="Postleitzahl"  class="form-control"/>
-              </li>
-              <li>
-                <label for="city">Ort:</label><br/>
-                <input type="text" id="city" name="city" placeholder="Ort"  class="form-control" />
-              </li>
-            </ul>
-       </div>
+         
+         
 
         <input type="submit" value="verbindlich Anmelden" class="form-control btn-mitmachen"/>
         
