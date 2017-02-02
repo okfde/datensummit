@@ -1,8 +1,7 @@
-[![Build Status](https://travis-ci.org/okfde/codefor.de.svg?branch=gh-pages)](https://travis-ci.org/okfde/codefor.de)
 
-# CodeFor.de
+# Datensummit.de
 
-These are the source files for the [Code for Germany Website](http://codefor.de).
+These are the source files for the [Code for Germany Website]
 
 ## Setup
 
@@ -15,8 +14,7 @@ Then clone this repository by invoking the following in a terminal,
 presuming you know how to get there:
 
 ```bash
-git clone https://github.com/okfde/codefor.de.git
-```
+git clone https://github.com/okfde/datensummit.git
 Install Ruby and gem. Then get the dependencies:
 
 ```bash
