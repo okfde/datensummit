@@ -1,5 +1,5 @@
 $red: #EE4268;
-$blue: #00ABFA;
+$blue: #26b7d9;
 $green: #0F7676;
 $green2: #03A678;
 $mint: #B9F817;
@@ -1217,6 +1217,12 @@ $date-circle: 80px;
   	background-size: 250px;
 }
 
+.hero-veranstalter {
+	background-image: url("/img/team_okfblau.gif");
+//	background-size: 50%;
+  	background-size: 250px;
+}
+
 
 .hero-slogan {
 	background-image: url("/img/workinon.gif");
@@ -1847,6 +1853,7 @@ keyframes fadein {
 .nav-pills>li {
   float: right;
 }
+
 #animation-wrapper {
   background: transparent;
 }
@@ -1873,12 +1880,12 @@ keyframes fadein {
 	input[type="text"],
 	input[type="email"] {
 		background-color: $grey-bright;
-		border: 1px solid $grey-bright;
-		box-shadow: none;
-		outline: none;
+	//	border: 1px solid $grey-bright;
+	//	box-shadow: none;
+	//	outline: none;
 		transition: border .2s;
 		&:focus {
-			border: 1px solid $black;
+		//	border: 1px solid $black;
 		}
 	}
 
@@ -1918,13 +1925,21 @@ keyframes fadein {
 		padding: 0 20px;
 	}
 
+	.fond__green {
+		.sign-in-form-input {
+			max-width: 500px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
 	.sign-in-form-input:not(:first-child) {
 		margin-top: 40px;
 	}
 
 	label {
     	display: inline-block;
-    	/* margin-bottom: 5px; */
+    	margin-bottom: 5px; 
     	font-weight: bold;
     }
 
@@ -1951,23 +1966,33 @@ keyframes fadein {
 	}
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    	padding: 0 10px;
+    	padding: 0 5px;
 	}
 
 	::-moz-placeholder { /* Firefox 19+ */
-    	padding: 0 10px;
+    	padding: 0 5px;
 	}
 
 	:-ms-input-placeholder { /* IE 10+ */
-    	padding: 0 10px;
+    	padding: 0 5px;
 	}
 
 	:-moz-placeholder { /* Firefox 18- */
-    	padding: 0 10px;
+    	padding: 0 5px;
 	}
  
 }
 
+.btn-mitmachen-form {
+	background-color: $red;
+	color: $white;
+	width: 50%;
+	margin: 0 auto 30px auto;
+}
+
+.center {
+	margin: 0 auto;
+}
 
 .speaker-name {
 	display: block;
@@ -1980,16 +2005,14 @@ keyframes fadein {
 	} 
 
 	a:hover, a:focus {
-		color: $orange;	}
-
+		color: $orange;	
+	}
 }
 
 
 .speaker-margin{
 	margin: 20px 0;
-
 }
-
 
 
 .slogan{
