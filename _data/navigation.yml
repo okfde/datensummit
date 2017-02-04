@@ -1,10 +1,10 @@
 de:
 # - title: Blog
 #   url: /blog
-#  - title: Presse
-#    url: /presse
-  - title: Speaker
-    url: /speaker
+  - title: Orga
+    url: /orga
+#  - title: Speaker
+#    url: /speaker
 
   - title: Anmelden
     url: /anmelden
