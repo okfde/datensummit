@@ -1,8 +1,22 @@
 <div class="kommt">
-  <h1 class="cta text__white">
-	Klingt spannend? Dufte. Wir können es kaum erwarten Dich zu sehen.  
-  </h1>
- <h5 class="highlight text-center cta-sub">
-    <a href="/anmelden" ><span class="highlight-white">Jetzt anmelden</span></a>
-  </h5>
+	{% if page.lang == 'en' %}
+		<h1 class="cta text__white">
+			Sounds appealing? Fantastic. We can't wait to see you.
+  		</h1>      
+  	{% else %}
+		 <h1 class="cta text__white">
+			Klingt spannend? Dufte. Wir können es kaum erwarten Dich zu sehen.  
+  		</h1>                  
+  	{% endif%}
+
+ 	{% if page.lang == 'en' %}
+	<h5 class="highlight text-center cta-sub">
+    	<a href="/en/anmelden" ><span class="highlight-white">Register now</span></a>
+  	</h5>
+ 	{% else %}
+	<h5 class="highlight text-center cta-sub">
+    	<a href="/anmelden" ><span class="highlight-white">Jetzt anmelden</span></a>
+  	</h5>
+  	{% endif%}
+
 </div>

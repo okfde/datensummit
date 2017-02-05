@@ -1,5 +1,11 @@
 <div class="hero-overlay-info slogan">
- 	<h2 class="cta text__black">
-		Der Datensummit ist Startschuss und Rückblick zugleich. Seit fünf Jahren setzt sich die Open Knowledge Foundation Deutschland für offenes Wissen, offene Daten, Transparenz und Beteiligung ein. Nun wollen wir mit allen feiern, die Open Data in Deutschland voranbringen, weiterdenken oder kennenlernen möchten. Setzt die Partyhüte auf und springt zum Anmeldeformular. 
-	</h2>
+	{% if page.lang == 'en' %}
+		<h2 class="cta text__black">
+			Datensummit is going to be prospective and retrospective at the same time. For the last five years the Open Knowledge Foundation Germany has been advocating open knowledge, open data, transparency, and civil participation in Germany. Now we want to use the Datensummit as an opportunity to invite everyone who wants to advance open data in Germany. 
+		</h2>
+  	{% else %}                
+		<h2 class="cta text__black">
+			Der Datensummit ist Startschuss und Rückblick zugleich. Seit fünf Jahren setzt sich die Open Knowledge Foundation Deutschland für offenes Wissen, offene Daten, Transparenz und Beteiligung ein. Nun wollen wir mit allen feiern, die Open Data in Deutschland voranbringen, weiterdenken oder kennenlernen möchten. Setzt die Partyhüte auf und springt zum Anmeldeformular. 
+		</h2>
+  	{% endif%}
 </div>

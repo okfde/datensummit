@@ -1,5 +1,11 @@
 <div class="hero-overlay-info">
-  <h1 class="cta text__white">
-	Infos. Infos. Harte Fakten.
-	</h1>
+  	{% if page.lang == 'en' %}
+	 	<h1 class="cta text__white">
+			Info &amp; Hard Facts
+		</h1>
+  	{% else %}                
+	 	<h1 class="cta text__white">
+			Infos. Infos. Harte Fakten.
+		</h1>
+  	{% endif%}
 </div>

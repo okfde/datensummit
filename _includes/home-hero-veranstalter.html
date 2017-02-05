@@ -1,5 +1,11 @@
 <div class="hero-overlay-info">
-  <h1 class="cta text__white">
-	Wer wir genau sind
-	</h1>
+	{% if page.lang == 'en' %}
+	  	<h1 class="cta text__white">
+			Who we are
+		</h1>       
+  	{% else %}
+	  	<h1 class="cta text__white">
+			Wer wir genau sind
+		</h1>       
+  	{% endif%}
 </div>
