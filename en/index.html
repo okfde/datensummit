@@ -97,42 +97,5 @@ lang: en
   </div>
 </div>
 
-
-
-<script src="js/lib/jquery.cookie.js"></script>
-
-{% include leaflet.html %}
-
-<script type="text/javascript">
-
-  {% if page.lang == 'en' %}
-    {% assign homehero = site.data.homehero.en %}
-  {% else %} 
-    {% assign homehero = site.data.homehero.de %}
-  {% endif %}
-
-  herodata = {
-    headline : '{{ homehero.headline }}',
-    claims: [{% for claim in homehero.claims %}'{{ claim }}',{% endfor %}]
-  }
-
-</script>
-
 <!-- Newsletter -->
 {% include newsletter-form.html %}
-
-<script src="js/lib/jquery.cookie.js"></script>
-
-{% include leaflet.html %}
-
-<script type="text/javascript">
-  {% if page.lang == 'en' %}
-    {% assign homehero = site.data.homehero.en %}
-  {% else %} 
-    {% assign homehero = site.data.homehero.de %}
-  {% endif %}
-  herodata = {
-    headline : '{{ homehero.headline }}',
-    claims: [{% for claim in homehero.claims %}'{{ claim }}',{% endfor %}]
-  }
-</script>

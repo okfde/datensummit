@@ -18,14 +18,13 @@ git clone https://github.com/okfde/datensummit.git
 Install Ruby and gem. Then get the dependencies:
 
 ```bash
-sudo gem install bundler
-bundler install
+sh setup.sh
 ```
 
 You can now build the site and serve it:
 
 ```bash
-bundler exec jekyll serve
+sh serve.sh
 ```
 
 This command will give you a link where you can preview your changes in your browser.
@@ -38,14 +37,3 @@ This command will give you a link where you can preview your changes in your bro
 
  * The teaser  for an image can be set with `imgname-teaser: "<[RELATIVE] PATH TO IMAGE>"`.
 
-## Update avatars
-
-There's a python script to save all GitHub avatars into the repository:
-
-```bash
-virtualenv .env
-source .env/bin/activate
-pip install pyyaml requests
-python update_avatars.py
-deactivate
-```
