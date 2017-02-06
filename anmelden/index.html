@@ -16,128 +16,156 @@ url: /anmelden
     </div>
 </div>
 
-<div class="jumbotron fond__white animated">
-    <div class="beneath-sections fond__white">
-        <h3 class="text-center">
-            Wissenswertes vor der Anmeldung
-        </h3>
-        <p class="text-center">
-            Wir haben genau <span class="highlight-red">200 freie Plätze. </span> <br>Es besteht begrenzt die Möglichkeit, Reisekosten bis zu 100€ pro Person zu erstatten. <br> Schreibe uns in diesem Fall oder bei weiteren Fragen einfach eine <a href="mailto:datensummit@okfn.de">E-Mail</a>.
-        </p>
+
+<div class="beneath-sections fond__grey-mid">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="container-form">
+            <h3 class="text-center">
+                Wissenswertes vor der Anmeldung
+            </h3>
+            <p class="text-center">
+                Wir haben genau <span class="highlight-red">200 freie Plätze. </span> <br>Es besteht begrenzt die Möglichkeit, Reisekosten bis zu 100€ pro Person zu erstatten. <br> Schreibe uns in diesem Fall oder bei weiteren Fragen einfach eine <a href="mailto:datensummit@okfn.de">E-Mail</a>.
+            </p>
+            <p class="text-center">
+                <span class="required"> rot </span> = Pflichtfeld<br><br>
+            </p>
+        </div>
+        <div class="sign-in-form">
+            <form action="/register" method="post">
+                <fieldset>
+                    <div class="sign-in-form-wrapper">
+                        <div class="sign-in-form-section fond__white">
+                            <h3 class="text-center"> 
+                                    Schritt 1<br>Los geht's
+                            </h3>
+                            <div class="container">
+                                <div class="sign-in-form-column">
+                                    <div class="sign-in-form-input">
+                                        <label for="forename">
+                                            <span class="required">
+                                                Vorname
+                                            </span>
+                                        </label>
+                                        <input type="text" id="forename" name="forename" placeholder="Vorname" required class="form-control"/>
+                                    </div>
+                                    <div class="sign-in-form-input">
+                                            <label for="surname">
+                                                <span class="required">
+                                                    Nachname
+                                                </span>
+                                            </label>
+                                            <input type="text" id="surname" name="surname" placeholder="Nachname" required class="form-control"/>
+                                        </div>
+                                    </div>
+                                    <div class="sign-in-form-column">
+                                    <div class="sign-in-form-input">
+                                        <label for="email">
+                                            <span class="required">
+                                                E-Mail
+                                            </span>
+                                        </label>
+                                        <input type="email" id="email" name="email" placeholder="E-Mail" required class="form-control"/>
+                                    </div>
+                                    <div class="sign-in-form-input">
+                                        <label for="organisation">Organisation</label>
+                                        <input type="text" id="organisation" name="organisation" placeholder="Organisation" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sign-in-form-section fond__red">
+                            <div class="container">
+                                <div class="sign-in-form-column text__white">
+                                    <div class="sign-in-form-input">
+                                        <label class="label-center" for="attendance"> 
+                                            <h3 class="text__white">
+                                                Schritt 2<br>An welchem Tag willst du teilnehmen? 
+                                            </h3>
+                                        </label>
+                                        <div id="attendance">
+                                            <div class="sign-in-form-input">
+                                                <label>
+                                                    <input type="radio" name="attendance" value="beide" required data-toggle="show">
+                                                    <span>Beide Tage</span>
+                                                </label>
+                                            </div>
+                                            <div class="sign-in-form-input">
+                                                <label>
+                                                    <input type="radio" name="attendance" value="1" required data-toggle="show">
+                                                    <span>Nur Tag 1: BMVI</span>
+                                                </label>
+                                            </div>
+                                            <div class="sign-in-form-input">
+                                                <label>
+                                                    <input type="radio" name="attendance" value="2" required data-toggle="hide">
+                                                    <span>Nur Tag 2: Betahaus</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sign-in-form-section fond__white text__black" data-toggle-target>
+                            <h3 class="text-center">Schritt 2.–<br>Infos für den Zugang zum BMVI*</h3>
+                            <div class="container">
+                                <div class="sign-in-form-column">
+                                    <div class="sign-in-form-input">
+                                        <label for="birthdate">
+                                            <span class="required">
+                                                Geburtsdatum
+                                            </span>
+                                        </label>
+                                        <input type="text" id="birthdate" name="birthdate" placeholder="XX.XX.XXXX" required class="form-control"/>
+                                    </div>
+                                    <div class="sign-in-form-input">
+                                        <label for="adress">Adresse</label>
+                                        <input type="text" id="address" name="address" placeholder="Straße 24" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <br>
+                                <i>*Für den Zugang in das BMVI am 1. Veranstaltungstag benötigt das Ministerium einen gültigen Personalausweis oder Reisepass von jeder Teilnehmerin . Dazu sind wir verpflichtet, Eure Daten zu sammeln. Wir werden sie ausschließlich dafür nutzen, nicht an andere weiterleiten und nach der Veranstaltung umgehend löschen.“
+                                </i>
+                            </p>
+                        </div>
+                        <div class="sign-in-form-section fond__white">
+                            <div class="container">
+                                <div class="sign-in-form-column">
+                                    <div class="sign-in-form-input center">
+                                        <h3 class="text-center">Schritt 3<br>Fast geschafft</h3>
+                                        <label for="expertise"> <p class="text-center">Welchen Bereich repräsentiere ich?</p> </label>
+                                        <select id="expertise" name="expertise" class="img-center">
+                                            <option value="Keine Angabe">Keine Angabe</option>
+                                            <option value="Nichtregierungsorganisation">Nichtregierungsorganisation</option>
+                                            <option value="Politik und Verwaltung">Politik und Verwaltung</option>
+                                            <option value="Techie">Techie</option>
+                                            <option value="Wirtschaft">Wirtschaft</option>
+                                            <option value="Wissenschaft">Wissenschaft</option>
+                                            <option value="Sonstiges">Sonstiges</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <div class="sign-in-form-input center">
+                                        <label>
+                                            <input type="checkbox" name="childcare" value="ja" class="form-control">
+                                            <span>Kinderbetreuung erwünscht</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fond__white">
+                            <div class="container">
+                                <input type="submit" value="Anmelden" class="form-control btn-mitmachen-form"/>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <br><br>
     </div>
 </div>
-<div class="sign-in-form">
-    <form action="/register" method="post">
-        <fieldset>
-            <div class="sign-in-form-wrapper">
-                <div class="sign-in-form-section fond__white">
-                    <div class="container">
-                        <div class="sign-in-form-column">
-                            <div class="sign-in-form-input">
-                                <label for="forename">Vorname*</label>
-                                <input type="text" id="forename" name="forename" placeholder="Vorname" required class="form-control"/>
-                            </div>
-                            <div class="sign-in-form-input">
-                                    <label for="surname">Nachname*</label>
-                                    <input type="text" id="surname" name="surname" placeholder="Nachname" required class="form-control"/>
-                                </div>
-                            </div>
-                            <div class="sign-in-form-column">
-                            <div class="sign-in-form-input">
-                                <label for="email">E-Mail*</label>
-                                <input type="email" id="email" name="email" placeholder="E-Mail" required class="form-control"/>
-                            </div>
-                            <div class="sign-in-form-input">
-                                <label for="organisation">Organisation</label>
-                                <input type="text" id="organisation" name="organisation" placeholder="Organisation" class="form-control"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sign-in-form-section fond__cyan">
-                    <div class="container">
-                        <div class="sign-in-form-column ">
-                            <div class="sign-in-form-input">
-                                <label for="attendance""> 
-                                    <h3 class="text__black">Ich nehme teil an*</h3>
-                                </label>
-                                <div id="attendance">
-                                    <div class="sign-in-form-input">
-                                        <label>
-                                            <input type="radio" name="attendance" value="beide" required data-toggle="show">
-                                            <span>Beiden Tagen</span>
-                                        </label>
-                                    </div>
-                                    <div class="sign-in-form-input">
-                                        <label>
-                                            <input type="radio" name="attendance" value="1" required data-toggle="show">
-                                            <span>Nur Tag 1: BMVI</span>
-                                        </label>
-                                    </div>
-                                    <div class="sign-in-form-input">
-                                        <label>
-                                            <input type="radio" name="attendance" value="2" required data-toggle="hide">
-                                            <span>Nur Tag 2: Betahaus</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sign-in-form-section fond__green text__white" data-toggle-target>
-                    <h3 class="text-center">Daten für den Zugang im BMVI</h3>
-                    <div class="container">
-                        <div class="sign-in-form-column">
-                            <div class="sign-in-form-input">
-                                <label for="birthdate">Geburtsdatum*</label>
-                                <input type="text" id="birthdate" name="birthdate" placeholder="XX.XX.XXXX" required class="form-control"/>
-                            </div>
-                            <div class="sign-in-form-input">
-                                <label for="adress">Adresse</label>
-                                <input type="text" id="adress" name="adress" placeholder="Straße 24" class="form-control"/>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-center">
-                        <br>
-                        <i>* für den Zugang in das BMVI benötigt das Ministerium ein gültiges Lichtbilddokument von jedem Teilnehmer am Veranstaltungstag.</i>
-                    </p>
-                </div>
-                <div class="sign-in-form-section fond__white">
-                    <div class="container">
-                        <div class="sign-in-form-column">
-                            <div class="sign-in-form-input center">
-                                <label for="expertise" class="form-control"> <p class="text-center">Welchen Bereich repräsentiere ich?</p> </label>
-                                <select id="expertise" name="expertise" class="img-center">
-                                    <option value="Keine Angabe">Keine Angabe</option>
-                                    <option value="Nichtregierungsorganisation">Nichtregierungsorganisation</option>
-                                    <option value="Politik und Verwaltung">Politik und Verwaltung</option>
-                                    <option value="Techie">Techie</option>
-                                    <option value="Wirtschaft">Wirtschaft</option>
-                                    <option value="Wissenschaft">Wissenschaft</option>
-                                    <option value="Sonstiges">Sonstiges</option>
-                                </select>
-                            </div>
-
-                            <div class="sign-in-form-input">
-                                <label>
-                                    <input type="checkbox" name="childcare" value="ja" class="form-control img-center">
-                                    <span>Kinderbetreuung erwünscht</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sign-in-form-section fond__white">
-                    <div class="container">
-                        <input type="submit" value="verbindlich Anmelden" class="form-control btn-mitmachen-form"/>
-                        <p class="text-center">
-                            <i>* für den Zugang in das BMVI benötigt das Ministerium ein gültiges Lichtbilddokument von jedem Teilnehmer am Veranstaltungstag.</i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </fieldset>
-    </form>
 </div>

@@ -1193,10 +1193,7 @@ $date-circle: 80px;
   	background-size: 65%;
     background-position-x: 20px;
     background-position-y: 20px;
-
 }
-
-
 
 
 .hero-register {
@@ -1812,11 +1809,19 @@ keyframes fadein {
 	background-color: $red;
 	color: $white;
 	width: 50%;
-	margin: 0 auto 30px auto;
+	margin: 0 auto 70px auto;
 }
 
 .center {
 	margin: 0 auto;
+	text-align: center;
+}
+
+
+.label-center{
+	width: 100%;
+	text-align: center;
+
 }
 
 .speaker-name {
@@ -1869,4 +1874,14 @@ keyframes fadein {
 		text-align: center;
 		padding: 0 0 20px 0;
 	}
+}
+
+
+.required{
+	color: $red;
+}
+
+
+.container-form{
+	margin-top: 80px;
 }
