@@ -8,143 +8,167 @@ lang: en
 ---
 
 
+
 <!-- About -->
 <div class="hero-container fond__cyan">
-   <div class="hero-pattern hero-pattern__drl">
-      <div class="hero-pattern-wrap hero-anmelden">
-        {% include home-hero-anmelden.html %}
-      </div>
+    <div class="hero-pattern hero-pattern__drl">
+        <div class="hero-pattern-wrap hero-anmelden">
+            {% include home-hero-anmelden.html %}
+        </div>
     </div>
 </div>
 
 
+<div class="beneath-sections fond__grey-mid">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="container-form">
+            <h3 class="text-center">
+                Wissenswertes vor der Anmeldung
+            </h3>
+            <p class="text-center">
+                We have exactly <span class="highlight-red"> 200 spots available.</span> <br>Up to 100€ per person can be reimbursed for travel costs inside of Germany. <br> Please write us an <a href="mailto:datensummit@okfn.de">E-Mail</a>
+            </p>
+            <p class="text-center">
+                <span class="required"> red </span> = required<br><br>
+            </p>
+        </div>
+        <div class="sign-in-form">
+            <form action="/register" method="post">
+                <fieldset>
+                    <div class="sign-in-form-wrapper">
+                        <div class="sign-in-form-section fond__white">
+                            <h3 class="text-center"> 
+                                Step 1<br>Let's start
+                            </h3>
+                            <div class="container">
+                                <div class="sign-in-form-column">
+                                    <div class="sign-in-form-input">
+                                        <label for="forename">
+                                            <span class="required">
+                                                First Name
+                                            </span>
+                                        </label>
+                                        <input type="text" id="forename" name="forename" placeholder="Vorname" required class="form-control"/>
+                                    </div>
+                                    <div class="sign-in-form-input">
+                                            <label for="surname">
+                                                <span class="required">
+                                                    Surname
+                                                </span>
+                                            </label>
+                                            <input type="text" id="surname" name="surname" placeholder="Nachname" required class="form-control"/>
+                                        </div>
+                                    </div>
+                                    <div class="sign-in-form-column">
+                                    <div class="sign-in-form-input">
+                                        <label for="email">
+                                            <span class="required">
+                                                E-Mail
+                                            </span>
+                                        </label>
+                                        <input type="email" id="email" name="email" placeholder="E-Mail" required class="form-control"/>
+                                    </div>
+                                    <div class="sign-in-form-input">
+                                        <label for="organisation">Organisation</label>
+                                        <input type="text" id="organisation" name="organisation" placeholder="Organisation" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sign-in-form-section fond__red">
+                            <div class="container">
+                                <div class="sign-in-form-column text__white">
+                                    <div class="sign-in-form-input">
+                                        <label class="label-center" for="attendance"> 
+                                            <h3 class="text__white">
+                                                Step 2<br>I will attend
+                                            </h3>
+                                        </label>
+                                        <div id="attendance">
+                                            <div class="sign-in-form-input">
+                                                <label>
+                                                    <input type="radio" name="attendance" value="beide" required data-toggle="show">
+                                                    <span>both days</span>
+                                                </label>
+                                            </div>
+                                            <div class="sign-in-form-input">
+                                                <label>
+                                                    <input type="radio" name="attendance" value="1" required data-toggle="show">
+                                                    <span>only day 1: ministry</span>
+                                                </label>
+                                            </div>
+                                            <div class="sign-in-form-input">
+                                                <label>
+                                                    <input type="radio" name="attendance" value="2" required data-toggle="hide">
+                                                    <span>only day 2: betahaus</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sign-in-form-section fond__white text__black" data-toggle-target>
+                            <h3 class="text-center">Schritt 2.–<br>Information to enter the ministry*</h3>
+                            <div class="container">
+                                <div class="sign-in-form-column">
+                                    <div class="sign-in-form-input">
+                                        <label for="birthdate">
+                                            <span class="required">
+                                                Birth date 
+                                            </span>
+                                        </label>
+                                        <input type="text" id="birthdate" name="birthdate" placeholder="XX.XX.XXXX" required class="form-control"/>
+                                    </div>
+                                    <div class="sign-in-form-input">
+                                        <label for="adress">Address</label>
+                                        <input type="text" id="address" name="address" placeholder="Straße 24" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <br>
+                                <i>*To enter the BMVI on the day 1 the ministry needs a valid ID card or passport from every participant. We are therefore obligated to save your data. We only use it for the above stated reason and will delete it immediately after the event.
 
-
-<div class="beneath-sections jumbotron fond__white">
-  <div class="container text__black">
-    <h3 class="text-center">Worth knowing before the registration</h3>
-    
-    <p class="text-center">
-      We have exactly<span class="highlight-red">200 spots available.</span> Up to 100€ per person can be reimbursed for travel costs inside of Germany. Please write us an <a href="mailto:datensummit@okfn.de">e-mail</a>  if you want to claim this or have further questions.
-    </p>
-    <p class="text-center">
-      The main language of the event is German. We will try to make as many talks available in English as possible but we can’t guarantee this yet.
-    </p>
-  </div>
+                                </i>
+                            </p>
+                        </div>
+                        <div class="sign-in-form-section fond__white">
+                            <div class="container">
+                                <div class="sign-in-form-column">
+                                    <div class="sign-in-form-input center">
+                                        <h3 class="text-center">Step 3<br>Almost there</h3>
+                                        <label for="expertise"> <p class="text-center">Which sector do you represent?</p> </label>
+                                        <select id="expertise" name="expertise" class="img-center">
+                                            <option value="Keine Angabe">Not applicable</option>
+                                            <option value="Nichtregierungsorganisation">Non-governmental organisation </option>
+                                            <option value="Politik und Verwaltung">Politics and public administration</option>
+                                            <option value="Techie">Techie</option>
+                                            <option value="Wirtschaft">Private sector</option>
+                                            <option value="Wissenschaft">Research</option>
+                                            <option value="Sonstiges">Other</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <div class="sign-in-form-input center">
+                                        <label>
+                                            <input type="checkbox" name="childcare" value="ja" class="form-control">
+                                            <span>Child care necessary</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fond__white">
+                            <div class="container">
+                                <input type="submit" value="Anmelden" class="form-control btn-mitmachen-form"/>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <br><br>
+    </div>
 </div>
-
- <div class="sign-in-form">
-    <form action="/register" method="post">
-        <fieldset>
-            <div class="sign-in-form-wrapper">
-                <div class="sign-in-form-section fond__white">
-                    <div class="container">
-                        <div class="sign-in-form-column">
-                            <div class="sign-in-form-input">
-                                <label for="forename">First Name*</label>
-                                <input type="text" id="forename" name="forename" placeholder="First Name" required class="form-control"/>
-                            </div>
-                            <div class="sign-in-form-input">
-                                    <label for="surname">Surname*</label>
-                                    <input type="text" id="surname" name="surname" placeholder="Surname" required class="form-control"/>
-                                </div>
-                            </div>
-                            <div class="sign-in-form-column">
-                            <div class="sign-in-form-input">
-                                <label for="email">E-Mail*</label>
-                                <input type="email" id="email" name="email" placeholder="E-Mail" required class="form-control"/>
-                            </div>
-                            <div class="sign-in-form-input">
-                                <label for="organisation">Organisation/Company</label>
-                                <input type="text" id="organisation" name="organisation" placeholder="Organisation/Company" class="form-control"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sign-in-form-section fond__grey-bright">
-                    <div class="container">
-                        <div class="sign-in-form-column ">
-                            <div class="sign-in-form-input">
-                                <label for="attendance""> 
-                                    <h3 class="text__black">I will attend*</h3>
-                                </label>
-                                <div id="attendance">
-                                    <div class="sign-in-form-input">
-                                        <label>
-                                            <input type="radio" name="attendance" value="beide" required data-toggle="show">
-                                            <span>Both days*</span>
-                                        </label>
-                                    </div>
-                                    <div class="sign-in-form-input">
-                                        <label>
-                                            <input type="radio" name="attendance" value="1" required data-toggle="show">
-                                            <span>Only day 1: ministry*</span>
-                                        </label>
-                                    </div>
-                                    <div class="sign-in-form-input">
-                                        <label>
-                                            <input type="radio" name="attendance" value="2" required data-toggle="hide">
-                                            <span>Only day 2: Betahaus</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sign-in-form-section fond__grey-mid text__black" data-toggle-target>
-                    <h3 class="text-center">Daten für den Zugang im BMVI</h3>
-                    <div class="container">
-                        <div class="sign-in-form-column">
-                            <div class="sign-in-form-input">
-                                <label for="birthdate">Birth date*</label>
-                                <input type="text" id="birthdate" name="birthdate" placeholder="XX.XX.XXXX" required class="form-control"/>
-                            </div>
-                            <div class="sign-in-form-input">
-                                <label for="adress">Address</label>
-                                <input type="text" id="adress" name="adress" placeholder="Street 24" class="form-control"/>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-center">
-                      <br><br>
-                        <i>*To enter the BMVI on the day 1 the ministry needs a valid ID card or passport from every participant. <br> We are therefore obligated to save your data. We only use it for the above stated reason and will delete it immediately after the event.</i>
-                    </p>
-                </div>
-                <div class="sign-in-form-section fond__white">
-                    <div class="container">
-                        <div class="sign-in-form-column">
-                            <div class="sign-in-form-input center">
-                                <label for="expertise" class="form-control"> <p class="text-center">Which sector do I represent?</p> </label>
-                                <select id="expertise" name="expertise" class="img-center">
-                                    <option value="Keine Angabe">Not applicable</option>
-                                    <option value="Nichtregierungsorganisation">Non-governmental organisation</option>
-                                    <option value="Politik und Verwaltung">Politics and public administration</option>
-                                    <option value="Techie">Techie</option>
-                                    <option value="Wirtschaft">Private sector</option>
-                                    <option value="Wissenschaft">Research</option>
-                                    <option value="Sonstiges">Other</option>
-                                </select>
-                            </div>
-
-                            <div class="sign-in-form-input">
-                                <label>
-                                    <input type="checkbox" name="childcare" value="ja" class="form-control img-center">
-                                    <span>Child care necessary</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sign-in-form-section fond__white">
-                    <div class="container">
-                        <input type="submit" value="Register" class="form-control btn-mitmachen-form"/>
-                        <p class="text-center">
-                            <i>*To enter the BMVI on the day 1 the ministry needs a valid ID card or passport from every participant. We are therefore obligated to save your data. We only use it for the above stated reason and will delete it immediately after the event.</i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </fieldset>
-    </form>
 </div>
