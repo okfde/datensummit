@@ -1,5 +1,12 @@
 <div class="hero-overlay-info">
-  <h1 class="cta text__white">
-	Anmelden. Yay.
-	</h1>
+  	{% if page.lang == 'en' %}
+	 	<h1 class="cta text__white">
+			Register. Yay. 
+		</h1>
+  	{% else %}                
+		<h1 class="cta text__white">
+			Anmelden. Yay.
+		</h1>
+  	{% endif%}
+ 
 </div>
