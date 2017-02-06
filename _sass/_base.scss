@@ -106,6 +106,20 @@ $orange: #FFC349;
 .text__white { color: $white;}
 
 
+
+@font-face {
+	font-family: 'League Spartan';
+	src: url('../fonts/leaguespartan-bold.eot');
+	src: url('../fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/leaguespartan-bold.woff2') format('woff2'),
+	url('../fonts/leaguespartan-bold.woff') format('woff'),
+	url('../fonts/leaguespartan-bold.ttf') format('truetype'),
+	url('../fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
 $leaguespartan: 'League Spartan',sans-serif;
 
 
@@ -646,7 +660,7 @@ $keep: 44 + 2 * 15px;
 
 .event-time {
 	&:before {
-		background-image: url('../img/time.svg');
+		background-image: url('../static/img/time.svg');
 		height: 20px;
 		width: 18px;
 	}
@@ -654,7 +668,7 @@ $keep: 44 + 2 * 15px;
 
 .event-location {
 	&:before {
-		background-image: url('../img/place.svg');
+		background-image: url('../static/img/place.svg');
 		height: 21px;
 		width: 17px;
 	}
@@ -767,7 +781,7 @@ $date-circle: 80px;
 
 .project-collaborators {
 	&:before {
-		background-image: url('../img/collaborators.svg');
+		background-image: url('../static/img/collaborators.svg');
 		height: 23px;
 		width: 21px;
 	}
@@ -1145,7 +1159,7 @@ $date-circle: 80px;
 
 
 .hero-pattern-wrap, .story--pattern-wrap {
-	//background-image: url("/img/info.gif");
+	//background-image: url("/static/img/info.gif");
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100%;
@@ -1155,26 +1169,26 @@ $date-circle: 80px;
 
 
 .hero-info {
-	background-image: url("/img/info.gif");
+	background-image: url("/static/img/info.gif");
 //	background-size: 50%;
   	background-size: 250px;
 }
 
 .hero-anmelden {
-	background-image: url("/img/anmelden.gif");
+	background-image: url("/static/img/anmelden.gif");
 //	background-size: 50%;
   	background-size: 250px;
 }
 
 .hero-veranstalter {
-	background-image: url("/img/team_okfblau.gif");
+	background-image: url("/static/img/team_okfblau.gif");
 //	background-size: 50%;
   	background-size: 250px;
 }
 
 
 .hero-slogan {
-	background-image: url("/img/workinon-2.gif");
+	background-image: url("/static/img/workinon-2.gif");
 //	background-size: 50%;
   	background-size: 65%;
     background-position-x: 20px;
@@ -1186,28 +1200,28 @@ $date-circle: 80px;
 
 
 .hero-register {
-	background-image: url("/img/register.gif");
+	background-image: url("/static/img/register.gif");
 //	background-size: 50%;
   	background-size: 250px;
 }
 
 
 .hero-orga {
-	background-image: url("/img/organisiert.gif");
+	background-image: url("/static/img/organisiert.gif");
 //	background-size: 50%;
   	background-size: 250px;
 }
 
 
 .hero-speaker {
-	background-image: url("/img/speaker.gif");
+	background-image: url("/static/img/speaker.gif");
 //	background-size: 100%;
  	background-size: 250px;
 }
 
 
 .hero-index {
-	background-image: url("/img/io.png");
+	background-image: url("/static/img/io.png");
 	background-size: 50%;
   //	background-size: 250px;
 }
