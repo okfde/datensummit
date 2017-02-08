@@ -11,6 +11,7 @@
 		{% assign description = site.description | strip_html | strip_newlines %}
 	{% endif %}
 <meta property="og:description" content="{{ description }}">
+<meta name="twitter:description" content="{{ description }}" />
 
 {% if page.og-image %}
 <meta property="og:image" content="{{ page.og-image | prepend: site.url }}" />
