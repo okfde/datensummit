@@ -6,8 +6,10 @@ $(document).ready(function() {
 
     if (connect === 'show') {
       $target.addClass('is-visible');
+      $("#birthdate").prop('required',true);
     } else {
       $target.removeClass('is-visible');
+      $("#birthdate").prop('required',false);
     }
   });
 });

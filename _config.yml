@@ -8,7 +8,9 @@ exclude:
   - "Gemfile*"
   - "mission"
   - "README.md"
+  - "*.sh"
   - "doc/"
+  - "local/"
   - "update_avatars.py"
   #- "projekte" # uncomment line to speed up jekyll build for development
   #- "blog" # uncomment line to speed up jekyll build for development
