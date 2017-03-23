@@ -10,7 +10,7 @@ $grey-dark: #999999;
 $black: #000000;
 $white: #FFFFFF;
 $dark-red: #C53C3C;
-$orange: #FFC349;
+$orange: #ffcf4d;
 
 
 .fond__red { background-color: $red;}
@@ -19,6 +19,8 @@ $orange: #FFC349;
 .fond__blue { background-color: $blue;}
 .fond__green { background-color: $green;}
 .fond__grey-bright { background-color: $grey-bright;}
+.fond__grey-mid { background-color: $grey-mid;}
+
 .fond__white { background-color: $white;}
 
 .fond__green2 { 
@@ -199,7 +201,7 @@ h4, .h4 {
 	line-height: 28px;
 }
 
-a, a:hover, a:visited, a:active {
+a, a:hover, a:active {
 	@extend .text__black;
 }
 
@@ -216,7 +218,6 @@ a, a:hover, a:visited, a:active {
 }
 
 .fond__white p a {
-	text-decoration: underline;
 }
 
 .fond__green .lab-links a {
@@ -272,6 +273,12 @@ label {
 	@extend .fond__cyan;
 	@extend .text__white;
 	@include inline-background($cyan);
+}
+
+.highlight-blue {
+	@extend .fond__blue;
+	@extend .text__white;
+	@include inline-background($blue);
 }
 
 .highlight-green {
@@ -793,22 +800,38 @@ $date-circle: 80px;
 
 .members {
 	line-height: 26px;
-	font-size: 16px;
+	font-size: 20px;
+	text-align: center;
 
 	.member {
 		margin-bottom: 26px;
 		min-width: 100%;
 		display: block;
-		float: left;
+		float: center;
+
 	}
 
 	.member-avatar {
-		margin-right: 20px;
-		width: 80px;
-		height: 80px;
+		margin: 0 20px 10px 0;
+		width: 100px;
+		height: 100px;
+
+
 	}
+
 }
 
+.speaker-big {
+		width: 200px;
+		height: 200px;
+		margin: 0 20px 20px 0;
+		float: right;
+
+	}
+
+.speaker-bio {
+		margin: 100px 0 0 0;
+	}
 /*-----  End of Lab Page  ------*/
 
 
@@ -1220,6 +1243,20 @@ $date-circle: 80px;
 .hero-index {
 	background-image: url("/static/img/io.png");
 	background-size: 50%;
+  //	background-size: 250px;
+}
+
+
+.hero-day1 {
+	background-image: url("/static/img/tag1-1.gif");
+ 	background-size: 250px;
+  //	background-size: 250px;
+}
+
+
+.hero-day2 {
+	background-image: url("/static/img/tag2.gif");
+ 	background-size: 250px;
   //	background-size: 250px;
 }
 
@@ -1888,5 +1925,23 @@ keyframes fadein {
 
 .container-margin{
 	padding: 0 20px;
+
+}
+
+tbody{
+	border: 0;
+	vertical-align: baseline;
+	}
+
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr{
+  	padding: 10px;
+    text-align: left;
+    width: 80%;
 
 }

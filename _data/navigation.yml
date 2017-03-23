@@ -3,15 +3,21 @@ de:
 #   url: /blog
 #  - title: Orga
 #    url: /orga
-#  - title: Speaker
-#    url: /speaker
 
   - title: Anmelden
     url: /anmelden
 
+  - title: Redner
+    url: /speaker
+
+  - title: Tag 2
+    url: /tag_zwei
+
+  - title: Tag 1
+    url: /tag_eins
+
 #  - title: Themen
 #    url: /themen
-
 
   - title: Info
     url: /info
@@ -23,13 +29,20 @@ en:
 #    url: /blog
 #  - title: Press (de)
 #    url: /presse
-# - title: Speaker
-#   url: /en/speaker
+
 
   - title: Register
     url: /en/anmelden
-  
 
+  - title: Speaker
+    url: /en/speaker
+
+  - title: Day 2
+    url: /en/tag_zwei
+
+  - title: Day 1
+    url: /en/tag_eins
+  
   - title: Info
     url: /en/info
   
