@@ -1,0 +1,37 @@
+{% assign color_counter = 0 %}
+<table>
+	<tbody>
+	{% assign posts = site.data.programm | where:"day","1" %}
+	{% assign lang = include.lang %}
+
+	{% for post in posts %}
+
+	{% if post.type == 'meta' %}
+	<tr class="fond__blue text__white">
+		<td><strong>{{ post.time }}</strong></td>
+		<td><strong>{{ post.name[lang] }}</strong></td>
+	</tr>
+	{% endif %}
+
+	{% if post.type == 'talk' %}
+	{% capture color_counter %}{{ color_counter | plus: 1 }}{% endcapture %}
+	{% capture color_mod %}{{ color_counter | modulo:2 }}{% endcapture %}
+	<tr class="fond__grey-{% if color_mod == '1' %}bright{% else %}mid{% endif %}">
+		<td><strong>{{ post.time }}</strong></td>
+		<td>
+			<strong>{{ post.name[lang] }}{% if post.loading %}: <img src="/static/img/loading_1.gif" alt="ladegif">{% endif %}</strong><br>
+			{% if post.desc[lang] %}{{ post.desc[lang] }}<br>{% endif %}
+			{% for person in post.speakers %}
+			{% if person.info %}
+			<strong><a class="text__blue" href="{{ person.infourl }}"> {{ person.info }}</a></strong> –  {{ person.name }}<br>
+			{% else %}
+			<strong><a class="text__blue" href="/speaker/{{ person.slug }}">{{ person.name }}</a></strong>{% if person.desc[lang] %}, {{ person.desc[lang] }}{% endif %}<br/>
+			{% endif %}
+			{% endfor %}
+		</td>
+	</tr>
+	{% endif %}
+
+	{% endfor %}
+	</tbody>
+</table>
