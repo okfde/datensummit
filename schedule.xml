@@ -18,17 +18,17 @@
                 <date>2017-04-28T{{ post.time }}:00</date>
                 <start>{{ post.time }}</start>
                 <duration>{{ post.duration }}</duration>
-                <room>{{ post.room }}</room>
+                <room>{{ post.room | xml_escape }}</room>
                 <slug>datensummit17-{{ post.id }}</slug>
-                <title>{{ post.name.de }}</title>
-                <subtitle>{{ post.desc.de }}</subtitle>
+                <title>{{ post.name.de | xml_escape }}</title>
+                <subtitle>{{ post.desc.de | xml_escape }}</subtitle>
                 <track/>
                 <type/>
                 <language>de</language>
                 <abstract/>
                 <description/>
                 <persons>{% for person in post.speakers %}
-                    <person id="{{ person.speakerid }}">{{ person.name }}</person>{% endfor %}
+                    <person id="{{ person.speakerid }}">{{ person.name | xml_escape }}</person>{% endfor %}
                 </persons>
                 <links/>
             </event>{% endfor %}
