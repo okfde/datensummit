@@ -4,9 +4,6 @@ de:
 #  - title: Orga
 #    url: /orga
 
-  - title: Anmelden
-    url: /anmelden
-
   - title: Redner
     url: /speaker
 
@@ -30,9 +27,6 @@ en:
 #  - title: Press (de)
 #    url: /presse
 
-
-  - title: Register
-    url: /en/anmelden
 
   - title: Speaker
     url: /en/speaker
