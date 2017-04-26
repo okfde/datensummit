@@ -79,8 +79,8 @@
   id: "0050"
 
 - name:
-    de: Gute Daten, Schlechte Daten
-    en: Gute Daten, Schlechte Daten
+    de: Von Menschen, Daten und guten Vorsätze
+    en: About people, data and good intentions
   room: BMVI
   day: 1
   time: "12:00"
@@ -144,8 +144,8 @@
   id: "0080"
 
 - name:
-    de: "DataRun: Mobilitätskonzepte mit offenen Daten umsetzen"
-    en: "DataRun: Converting Mobility Concepts with Open Data"
+    de: "Data-Run: Mobilitätskonzepte mit offenen Daten umsetzen"
+    en: "Data-Run: Converting Mobility Concepts with Open Data"
   desc:
     de: Die drei Gewinner des BMVI Data Runs stellen ihre Projekte vor und zeigen, wie sich Offene Daten und Mobilität gewinnbringend verbinden lassen.
     en:
@@ -165,7 +165,7 @@
       desc:
       slug:
       speakerid: 91
-      info: waterRUNers
+      info: waterRUNners
       infourl: "https://www.bmvi.de/SharedDocs/DE/Artikel/DG/bmvi-data-run-2nd-projekt09-waterrunners.html"
     - name: Valentin Jahn
       desc:
@@ -237,8 +237,8 @@
   id: "0130"
 
 - name:
-    de: Dear Data
-    en: Dear Data
+    de: Reflections on Dear Data
+    en: Reflections on Dear Data
   room: BMVI
   day: 1
   time: "15:40"
