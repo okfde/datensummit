@@ -43,8 +43,38 @@
   id: "0030"
 
 - name:
-    de: Herausforderungen für Open Data, Transparenz und Civic Tech
-    en: Global Challenges for Open Data, Transparency and Civic Tech
+    de: "State of the Open: Work in Progress"
+    en: "State of the Open: Work in Progress"
+  loading: yes
+  room: BMVI
+  day: 1
+  time: "10:35"
+  duration: "00:35"
+  type: talk
+  speakers:
+    - name: Fiona Krakenbürger
+      desc:
+        de: Community Organizer Code for Germany, Open Knowledge Foundation Deutschland
+        en: Community Organizer Code for Germany, Open Knowledge Foundation Germany
+      slug: fiona
+      speakerid: 170
+    - name: Maxi Richt
+      desc:
+        de: Entwickler und Projektleiter, kleineAnfragen.de, Open Knowledge Foundation Deutschland
+        en: Developer and Project Lead, kleineAnfragen.de, Open Knowledge Foundation Germany
+      slug: maxi
+      speakerid: 171
+    - name: Arne Semsrott
+      desc:
+        de: Projektleiter, FragDenStaat, Open Knowledge Foundation Deutschland
+        en: Project Lead, FragdenStaat, Open Knowledge Foundation Deutschland
+      slug: arne
+      speakerid: 172
+  id: "0170"
+  
+- name:
+    de: "Offene Verwaltung: Langfristige Perspektive für Deutschland"
+    en: "Open Administration: Long-term perspective for Germany"
   desc:
     de:
     en: The challenges are manifold - whether socially, economically or politically. OpenData, transparency and Civic Tech open up new possibilities to solve these challenges.
@@ -54,12 +84,6 @@
   duration: "00:20"
   type: talk
   speakers:
-    - name: Helen Darbishire
-      desc:
-        de: Vice-President & Executive Director, Access Info Europe und Civil Society Steering Committee Member, Open Government Partnership
-        en: Vice-President and Executive Director, Access Info Europe und Civil Society Steering Committee Member,  Open Government Partnership
-      slug: helen
-      speakerid: 30
     - name: Franz-Reinhard Habbel
       desc:
         de: Schriftsteller und Sprecher des Deutschen Städte- und Gemeindebundes Berlin
@@ -176,8 +200,8 @@
   id: "0090"
 
 - name:
-    de: Offene Daten und deren wirtschaftliches Potential
-    en: Offene Daten und deren wirtschaftliches Potential
+    de: Das wirtschaftliche Potential von offenen Daten
+    en: The economic potential of open data
   room: BMVI
   day: 1
   time: "14:20"
@@ -193,7 +217,7 @@
   id: "0100"
 
 - name:
-    de: Kaffeepause
+    de: Kuchenpause
     en: Break
   room: BMVI
   day: 1
@@ -254,7 +278,7 @@
   id: "0140"
 
 - name:
-    de: Kuchenpause
+    de: Kaffeepause
     en: Break
   room: BMVI
   day: 1
@@ -290,40 +314,10 @@
   id: "0160"
 
 - name:
-    de: State of the Open
-    en: State of the Open
-  loading: yes
-  room: BMVI
-  day: 1
-  time: "17:20"
-  duration: "00:40"
-  type: talk
-  speakers:
-    - name: Fiona Krakenbürger
-      desc:
-        de: Community Organizer Code for Germany, Open Knowledge Foundation Deutschland
-        en: Community Organizer Code for Germany, Open Knowledge Foundation Germany
-      slug: fiona
-      speakerid: 170
-    - name: Maxi Richt
-      desc:
-        de: Entwickler und Projektleiter, kleineAnfragen.de, Open Knowledge Foundation Deutschland
-        en: Developer and Project Lead, kleineAnfragen.de, Open Knowledge Foundation Germany
-      slug: maxi
-      speakerid: 171
-    - name: Arne Semsrott
-      desc:
-        de: Projektleiter, FragDenStaat, Open Knowledge Foundation Deutschland
-        en: Project Lead, FragdenStaat, Open Knowledge Foundation Deutschland
-      slug: arne
-      speakerid: 172
-  id: "0170"
-
-- name:
     de: Abschluss
     en: Closing
   room: BMVI
   day: 1
-  time: "18:00"
+  time: "17:30"
   type: meta
   id: "0180"
