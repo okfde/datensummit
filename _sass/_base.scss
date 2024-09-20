@@ -24,7 +24,7 @@ $orange: #ffcf4d;
 
 .fond__white { background-color: $white;}
 
-.fond__green2 { 
+.fond__green2 {
 
   animation: colorchange 30s infinite;
   -webkit-animation: colorchange 30s infinite;
@@ -33,7 +33,7 @@ $orange: #ffcf4d;
   /*	background: -webkit-linear-gradient(-30deg, #E94AA1, #F23A3A); /* For Safari 5.1 to 6.0 */
 	/*background: -o-linear-gradient(-30deg, #E94AA1, #F23A3A); /* For Opera 11.1 to 12.0*/
 	/*background: -moz-linear-gradient(-30deg, #83E94A, #D1FF00); /* For Firefox 3.6 to 15 */
-	/*background: linear-gradient(-30deg, #E94AA1, #F23A3A); /* Standard syntax 
+	/*background: linear-gradient(-30deg, #E94AA1, #F23A3A); /* Standard syntax
 	}
 
 .fond__mint { background-color: $mint;
@@ -49,7 +49,7 @@ $orange: #ffcf4d;
 .fond__white { background-color: $white;}
 .fond__orange { background-color: $orange;}
 
-.text__orange { 
+.text__orange {
 	color: $orange;
 	a, a:hover, a:visited, a:focus {
 		color: $red;
@@ -57,47 +57,47 @@ $orange: #ffcf4d;
 }
 
 
-.text__red { 
+.text__red {
 	color: $red;
 	a, a:hover, a:visited, a:focus {
 		color: $red;
 	}
 }
 
-.text__blue { 
+.text__blue {
 	color: $blue;
 	a, a:hover, a:visited, a:focus {
 		color: $blue;
 	}
 }
 
-.text__green { 
+.text__green {
 	color: $green;
 	a, a:hover, a:visited, a:focus {
 		color: $green;
 	}
 }
 
-.text__cyan { 
+.text__cyan {
 	color: $cyan;
 	a, a:hover, a:visited, a:focus {
 		color: $cyan;
 	}
 }
 
-.text__grey-dark { 
+.text__grey-dark {
 	color: $grey-dark;
 	a, a:hover, a:visited, a:focus {
 		color: $grey-dark;
 	}
 }
-.text__grey-mid { 
+.text__grey-mid {
 	color: $grey-mid;
 	a, a:hover, a:visited, a:focus {
 		color: $grey-mid;
 	}
 }
-.text__grey-bright { 
+.text__grey-bright {
 	color: $grey-bright;
 	a, a:hover, a:visited, a:focus {
 		color: $grey-bright;
@@ -389,7 +389,7 @@ label {
 ============================*/
 
 .ptf-teaser {
-  
+
   .ptf-hidden {
     visibility: hidden;
   }
@@ -397,7 +397,7 @@ label {
   object {
     pointer-events: none;
   }
-  
+
 }
 
 
@@ -429,7 +429,7 @@ label {
 $keep: 44 + 2 * 15px;
 
 .nav-wrap {
-  position: absolute; 
+  position: absolute;
   top:0;
   right: calc(-100% + #{$keep});
   width: calc(100% - #{$keep});
@@ -527,8 +527,8 @@ $keep: 44 + 2 * 15px;
 
 	font-family: $leaguespartan;
 	padding: 5% 0;
-	top: 0; left: 0; right: 0; 
-	margin: 0 auto; 
+	top: 0; left: 0; right: 0;
+	margin: 0 auto;
 	width: 100%;
 
 }
@@ -538,13 +538,13 @@ $keep: 44 + 2 * 15px;
 	background-size: cover;
 	background-position: center;
 	padding: 0;
-	text-align: left; 
+	text-align: left;
 	width: 100%;
 	height: 100%;
 
 	font-family: $leaguespartan;
-	top: 0; left: 0; right: 0; 
-	margin: 0 auto; 
+	top: 0; left: 0; right: 0;
+	margin: 0 auto;
 
 
 	h1 {
@@ -1072,7 +1072,7 @@ $date-circle: 80px;
 ===============================*/
 
 .story-teaser--image, .story--head, .hero-pattern {
-	
+
 	a {
 		text-decoration: none;
 	}
@@ -1131,9 +1131,9 @@ $date-circle: 80px;
 
 // IE responsive SVG fix
 .story-teaser--image {
-	
+
 	padding-top: ( 415 / 640 ) * 100%;
-	
+
 	svg {
 		position: absolute;
 		top: 0;
@@ -1143,7 +1143,7 @@ $date-circle: 80px;
 
 
 .story-teaser--title {
-	
+
 	position: absolute;
 	width: 100%;
 	padding: 0 25px;
@@ -1155,7 +1155,7 @@ $date-circle: 80px;
 	color: white;
 
 	h2 {
-		font-family: 'League Spartan', "Apercu Mono Pro Regular", 'Andale Mono', sans-serif; 
+		font-family: 'League Spartan', "Apercu Mono Pro Regular", 'Andale Mono', sans-serif;
 		font-size: 18px;
 		line-height: 1.5;
 		text-transform: none;
@@ -1175,7 +1175,7 @@ $date-circle: 80px;
 }
 
 .story--pattern, .hero-pattern {
-	
+
 	position: relative;
 
 }
@@ -1269,7 +1269,7 @@ $date-circle: 80px;
 .hero-pattern-wrap {
 
 	padding-top: ( 415 / 1280 ) * 100%;
-	
+
 	svg {
 		position: absolute;
 		top: 0;
@@ -1280,9 +1280,9 @@ $date-circle: 80px;
 
 // IE responsive SVG fix
 .story--pattern-wrap {
-	
+
 	padding-top: ( 1030 / 1280 ) * 100%;
-	
+
 	svg {
 		position: absolute;
 		top: 0;
@@ -1293,7 +1293,7 @@ $date-circle: 80px;
 
 .story--header {
 	width: 100%;
-	color: white; 
+	color: white;
 }
 
 .story--header--hero {
@@ -1305,7 +1305,7 @@ $date-circle: 80px;
 	.caption {
 		color: white;
 		position: absolute;
-		bottom: 0; 
+		bottom: 0;
 		width: 100%;
 		text-transform: uppercase;
 	}
@@ -1313,7 +1313,7 @@ $date-circle: 80px;
 }
 
 .story--header--title {
-	font-family: 'League Spartan', "Apercu Mono Pro Regular", 'Andale Mono', sans-serif; 
+	font-family: 'League Spartan', "Apercu Mono Pro Regular", 'Andale Mono', sans-serif;
 	font-size: 24px;
 	line-height: 1.5;
 	text-transform: none;
@@ -1327,13 +1327,13 @@ $date-circle: 80px;
 	margin-bottom: 0;
 
 	a {
-		color: white; 
+		color: white;
 	}
 }
 
 
 .story--lead p {
-	font-family: 'League Spartan', "Apercu Mono Pro Regular", 'Andale Mono', sans-serif; 
+	font-family: 'League Spartan', "Apercu Mono Pro Regular", 'Andale Mono', sans-serif;
 	line-height: 1.5;
 	font-size: 24px;
 	text-align: center;
@@ -1343,7 +1343,7 @@ $date-circle: 80px;
 .story--embed {
 	margin-top: 80px;
 	margin-bottom: 80px;
-	max-width: 500px; 
+	max-width: 500px;
 	margin: 0 auto;
 }
 
@@ -1353,14 +1353,14 @@ $date-circle: 80px;
 
 .story--body {
 
-	h1, h2, h3, h4, h5 {	
-		font-family:  "Apercu Mono Pro Regular", 'Andale Mono', sans-serif; 
+	h1, h2, h3, h4, h5 {
+		font-family:  "Apercu Mono Pro Regular", 'Andale Mono', sans-serif;
 		font-size: 24px;
 		text-transform: none;
 	}
 
 	p {
-		font-family: "Apercu Mono Pro Regular", 'Andale Mono', sans-serif; 
+		font-family: "Apercu Mono Pro Regular", 'Andale Mono', sans-serif;
 		margin-bottom: 40px;
 	}
 
@@ -1390,13 +1390,13 @@ $date-circle: 80px;
 
 	blockquote {
 		position: relative;
-		padding: 0; 
+		padding: 0;
 		margin: 0 25px 15px 0;
 
 		border: 0;
-		
+
 		p {
-			font-family: "Apercu Mono Pro Regular", 'Andale Mono', sans-serif; 
+			font-family: "Apercu Mono Pro Regular", 'Andale Mono', sans-serif;
 			font-size: 24px;
 			text-indent: 36px;
 			margin: 0;
@@ -1442,8 +1442,8 @@ $date-circle: 80px;
 ================================*/
 
 // for digital refugee labs
-.hero-pattern__drl { 
-	
+.hero-pattern__drl {
+
 	&:before {
 		padding-top: 30%;
 	}
@@ -1631,7 +1631,7 @@ keyframes fadein {
 .hero-overlay {
 
 	padding: 0;
-	text-align: left; 
+	text-align: left;
 	width: 100%;
 	height: 100%;
 
@@ -1799,7 +1799,7 @@ keyframes fadein {
 
 	label {
     	display: inline-block;
-    	margin-bottom: 5px; 
+    	margin-bottom: 5px;
     	font-weight: bold;
     }
 
@@ -1840,7 +1840,7 @@ keyframes fadein {
 	:-moz-placeholder { /* Firefox 18- */
     	padding: 0 5px;
 	}
- 
+
 }
 
 .btn-mitmachen-form {
@@ -1870,10 +1870,10 @@ keyframes fadein {
 
 	a,  a:visited {
 		color: $red;
-	} 
+	}
 
 	a:hover, a:focus {
-		color: $orange;	
+		color: $orange;
 	}
 }
 
@@ -1945,4 +1945,9 @@ tr{
     text-align: left;
     width: 80%;
 
+}
+
+.banner {
+	background-color: #FFD45E;
+	padding: 10px 30px;
 }
